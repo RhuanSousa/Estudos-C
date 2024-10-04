@@ -7,7 +7,7 @@ int main() {
     printf("Digite um numero inteiro: ");
     scanf("%d", &num);
 
-    printf("Número usando %%f: %d\n", num);
+    printf("Numero usando %%f: %d\n", num);
 
     return 0;
 }
