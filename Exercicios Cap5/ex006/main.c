@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 
 int main(void) {
 
-    int num, i, c = 0;
+    int i;
 
-    printf("Digite um numero: ");
-    scanf("%d", &num);
-
-    for (i = 1; c < num; i+= 2)
+    for (i = 10; i >= 0; i--)
     {
         printf("%d\n", i);
-        c++;
+        Sleep(1000);
     }
+    
+    printf("FIM!\n");
 
     system("pause");
     return 0;
