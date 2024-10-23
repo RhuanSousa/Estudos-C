@@ -1,25 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define max_num (10)
+
 int main(void) {
+    
+    int soma = 0, num, i = 0;
 
-    char s[19];
+    
 
-    printf("Digite algo (leitura pelo gets): \n");
-    gets(s);
-    fflush(stdin);
+    while (i < max_num)
+    {
+        printf("Digite um numero positivo: ");
+        scanf("%d", &num);
 
-    puts("Resultado: ");
-    puts(s);
-    puts("");
+        if (num > 0)
+        {
+            soma += num;
+            i++;
+        } else {
+            printf("Numero invalido!\n");
+        }
+    }
+    
+    printf("Media dos numeros positivos digitados: %d", soma / max_num);
 
-    printf("Digite algo (leitura pelo fgets): \n");
-    fgets(s, 19, stdin);
-    fflush(stdin);
-
-    puts("Resultado: ");
-    puts(s);
-
-    system("pause");
     return 0;
 }
