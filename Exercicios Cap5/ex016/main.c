@@ -1,20 +1,17 @@
 #include <stdio.h>
 
 int main(void) {
-    int num, i, num_harmonico = 0;
+    float harmonico = 1.0, i, num;
 
     printf("Digite um numero: ");
-    scanf("%d", &num);
+    scanf("%f", &num);
 
-    for (i = 2; i <= num; i++)
+    for (i = 2.0; i <= num; i++)
     {
-        num_harmonico += 1/i;
+        harmonico += 1.0/i;
     }
 
-    num_harmonico = num_harmonico + 1;
-
-    printf("O enesimo termo do numero harmonico é: %d", num_harmonico);
-    
+    printf("\nO enesimo termo do numero harmonico e: %f", harmonico);
 
     return 0;
 }
