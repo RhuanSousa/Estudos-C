@@ -12,7 +12,7 @@ int main(void) {
         denominador++;
     }
 
-    printf("%.2f", s);
+    printf("Valor de S: %.2f", s);
     
     return 0;
 }
