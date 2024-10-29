@@ -4,7 +4,8 @@
 int main(void) {
 
     int num, i, fatorial = 1, j;
-    float E = 0.0;
+    float E = 0;
+
     do
     {
         printf("Digite um numero inteiro e positivo: ");
@@ -15,15 +16,17 @@ int main(void) {
         }
     } while (num <= 0);
 
-    for (i = 0; i <= num; i++)
+    for (j = 1; j <= num; j++)
     {   
-        for (j = 1; j < i; j++)
-        {
-            fatorial *= j;
-            E += 1 / fatorial;
+        fatorial = 1;
+        for (i = 1; i <= j; i++)
+        {   
+            fatorial *= i;
         }
+        E += 1.0/fatorial;
     }
 
-    printf("E = %f", E);
+    printf("Valor de E: %.4f", E);
+    
     return 0;
 }
