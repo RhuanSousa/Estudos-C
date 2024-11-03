@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 int main(void) {
 
@@ -12,9 +11,11 @@ int main(void) {
         scanf("%d", &vetor[i]);
     }
 
+    printf("\nValores digitados: ");
+
     for (i = 0; i < 6; i++)
     {
-        printf("\n%d", vetor[i]);
+        printf("%d ", vetor[i]);
     }
     return 0;
 }
