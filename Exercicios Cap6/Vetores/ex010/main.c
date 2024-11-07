@@ -1,15 +1,18 @@
 #include <stdio.h>
 
 int main(void) {
-    int vetor[100];
-    int i;
 
-    for (i = 0; i < 100; i++)
+    int vetor[100];
+    int i = 0, incrementa = 1;
+
+    for (i = 0; i < 100;)
     {
-        if (i % 7 != 0)
+        if (incrementa % 7 != 0)
         {
-            vetor[i] = i;
+            vetor[i] = incrementa;
+            i++;
         }
+        incrementa++;
     }
 
     for (i = 0; i < 100; i++)
