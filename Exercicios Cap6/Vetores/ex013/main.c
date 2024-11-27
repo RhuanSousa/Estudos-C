@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main(void)
 {
@@ -9,8 +9,8 @@ int main(void)
 
     for (i = 0; i < count; i++)
     {
-        /* code */
+        /* code 
     }
     
     return 0;
-}
+}*/
