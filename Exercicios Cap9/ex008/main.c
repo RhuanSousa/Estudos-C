@@ -3,8 +3,9 @@
 #include <math.h>
 
 void funcao(int n) {
+    int raiz = sqrt(n);
 
-    if (sqrt(n) == (int)n)
+    if (raiz * raiz == (int)n)
     {
         printf("O numero %d e perfeito", n);
     } else {
